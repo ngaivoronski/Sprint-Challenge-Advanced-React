@@ -10,7 +10,11 @@ const Navbar = () => {
 
     return (
     <nav className="navbar">
-        <h1>Womens Sports</h1>
+        <div className="head-div">
+        <h1>Womens World Cup</h1>
+        <h2>Most popular players via Google Trends June-July 2019</h2>
+        </div>
+        
         <div className="dark-mode__toggle">
         <div
             onClick={toggleMode}
