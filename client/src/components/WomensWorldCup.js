@@ -10,8 +10,6 @@ class WomensWorldCup extends React.Component {
         };
     }
 
-    
-
     componentDidMount() {
         axios
             .get(`http://localhost:5000/api/players`)
@@ -29,13 +27,10 @@ class WomensWorldCup extends React.Component {
         })
     }
 
-
-
-
     render() {
         console.log("rendering form");
         return (
-            <div>
+            <div className="card-list-div">
                 {this.state.data.map(athlete => {
                     return(<WomensCard name={athlete.name} country={athlete.country} searches={athlete.searches}/>)
                 })}
