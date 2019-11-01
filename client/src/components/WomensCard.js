@@ -8,9 +8,9 @@ class WomensCard extends React.Component {
     render() {
         return (
             <div>
-                <h2>{this.props.name}</h2>
-                <p>Country: {this.props.country}</p>
-                <p>Searches: {this.props.searches}</p>
+                <h2 data-testid="name-display">{this.props.name}</h2>
+                <p data-testid="country-display">Country: {this.props.country}</p>
+                <p data-testid="searches-display">Searches: {this.props.searches}</p>
             </div>
         );
     }

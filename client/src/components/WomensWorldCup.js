@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import WomensCard from './WomensCard';
-import {getData} from '../hooks/getData';
 
 class WomensWorldCup extends React.Component {
     constructor() {
