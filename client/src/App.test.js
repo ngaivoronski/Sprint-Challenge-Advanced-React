@@ -11,8 +11,16 @@ test('calling render of WomensCard with the same component on the same container
 
   
   const {getByTestId, rerender} = render(<WomensCard name="Becky Stacy" country="United States" searches={searches}/>)
+
+  //try name
   expect(getByTestId('name-display').textContent).toBe('Becky Stacy');
 
+  // try country
+  expect(getByTestId('country-display').textContent).toBe('Country: United States');
+
+  // try searches
+  expect(getByTestId('searches-display').textContent).toBe('Searches: 1');
+  
   // re-render the same component with different props
   rerender(<WomensCard name="Amanda Bynes" country="United States" searches={searches}/>)
   expect(getByTestId('name-display').textContent).toBe('Amanda Bynes')
